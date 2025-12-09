@@ -1,0 +1,130 @@
+
+
+.fade-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease, transform 300ms ease;
+}
+.fade-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+.fade-exit-active {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.transition-opacity {
+    transition: opacity 0.8s ease-in-out;
+}
+  
+.chatInputbox:focus{
+    outline: none;
+    border: none;
+}
+
+.chatInputbox{
+    border: 1px solid red;
+}
+
+
+
+
+
+.flight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid grey;
+  }
+  .flights-loader {
+    background: linear-gradient(90deg, #2c2c2c 25%, #3a3a3a 50%, #2c2c2c 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    margin:0px;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  @keyframes loading {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  .small {
+    font-size: 0.75rem;
+  }
+  .text-muted {
+    color: #8e8a8a !important;
+  }
+
+  .details-loader {
+    background: linear-gradient(90deg, #2c2c2c 25%, #3a3a3a 50%, #2c2c2c 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    margin:0px;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  @keyframes loading {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+  }
+  }
+
+.submit-btn:hover{
+  color: black;
+  background: white;
+}
+
+
+.submit-btn{
+  color:white;
+  background: transparent;
+}
+
+.tooltip-inner {
+  background-color: #ffffff !important;
+  color: black !important;
+  font-size: 1 rem;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+ 
+.tooltip-arrow {
+  /* width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #333 transparent transparent;  */
+  position: absolute;
+  top: 50%;
+  /* left: -5px; Align the arrow with the tooltip text */
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 5px 0;
+  border-color: transparent #ffffff transparent transparent;
+
+ 
+}
+
+
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('./fonts/OpenDyslexic-Regular.otf') format('opentype');
+}
+
+body {
+  font-family: 'OpenDyslexic', sans-serif;
+}
